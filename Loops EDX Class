@@ -1,0 +1,23 @@
+# Loops Class
+
+# CTRL C interrompe a execucao no terminal
+
+# end="" elimina a linha em branco da resposta no terminal
+#\n pula uma linha
+
+def main():
+    number = get_number()
+    boom(number)
+
+def get_number():
+    while True:
+        n = int(input("How many farts did you do today?"))
+        if n > 0:
+            break
+    return n
+
+def boom(n):
+    for _ in range(n):
+        print("boom")
+
+main()
